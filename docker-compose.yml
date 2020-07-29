@@ -1,0 +1,21 @@
+version: "3.6"
+services:
+  processor:
+    image: processor:latest
+    build:
+      context: .
+      args:
+        PACKAGE: processor
+#    command: "start:dev"
+#    volumes:
+#      - ./tsconfig.json:/usr/src/app/tsconfig.json
+#      - ./node_modules:/usr/src/app/node_modules
+#      - ./packages/core:/usr/src/app/packages/core
+#      - ./packages/processor:/usr/src/app/packages/processor
+  api:
+    image: api:latest
+    build:
+      context: .
+      args:
+        PACKAGE: api
+#    command: "start:dev"
