@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@monorepo/core",
+      "comment": "Removed bug in sum function",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@monorepo/core",
+  "email": "kiers.bas@gmail.com"
+}
