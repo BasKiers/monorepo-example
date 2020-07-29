@@ -399,15 +399,18 @@
     //
     {
      "packageName": "@monorepo/api",
-     "projectFolder": "packages/api"
+     "projectFolder": "packages/api",
+      "versionPolicyName": "Applications"
     },
     {
       "packageName": "@monorepo/core",
-      "projectFolder": "packages/core"
+      "projectFolder": "packages/core",
+      "versionPolicyName": "Libraries"
     },
     {
       "packageName": "@monorepo/processor",
-      "projectFolder": "packages/processor"
+      "projectFolder": "packages/processor",
+      "versionPolicyName": "Libraries"
     }
     //
     // {
