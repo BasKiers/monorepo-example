@@ -1,8 +1,8 @@
 {
   "name": "@monorepo/processor",
   "version": "1.0.0",
-  "main": "index.js",
-  "typings": "index.ts",
+  "main": "src/index.ts",
+  "typings": "src/index.ts",
   "dependencies": {
     "@monorepo/core": "1.0.0",
     "moment": "^2.25.3"

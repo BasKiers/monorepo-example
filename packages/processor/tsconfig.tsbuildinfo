@@ -25,13 +25,15 @@
         "version": "2f6d736891227ce727a1609df95869af4aa36419ab6cda33231ebfce1d2f6503",
         "signature": "e31795325ab50d7cb897290914d7f6c9201f4872247b7103038013090e77fa09"
       },
-      "../core/dist/map/directory/file.d.ts": {
-        "version": "1c29f520ccf4ca4edecc75f1d96c38d526a5e0e465b0271a40a265a8547e3d88",
-        "signature": "1c29f520ccf4ca4edecc75f1d96c38d526a5e0e465b0271a40a265a8547e3d88"
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/chalk/4.0.0/node_modules/chalk/index.d.ts": {
+        "version": "c824427af4986c2124de29d9fda0071cc043b1a855a0e723fa8ca31d4256c23f",
+        "signature": "c824427af4986c2124de29d9fda0071cc043b1a855a0e723fa8ca31d4256c23f"
       },
-      "../core/dist/index.d.ts": {
-        "version": "cde2a1aff34487f58f8516c0373c15b1d705e639acc50e839b6231dea2c2e1ab",
-        "signature": "cde2a1aff34487f58f8516c0373c15b1d705e639acc50e839b6231dea2c2e1ab"
+      "../core/src/map/directory/file.ts": {
+        "version": "72f6ef37bce5f321c5568f6d24b96593adc8f1f5267a3d9b608b5d72c36d49d0"
+      },
+      "../core/src/index.ts": {
+        "version": "23d9a1737b1aefc03823b0b9ea20d87cce98f2a1346f923df9c6c26fe468a317"
       },
       "../../common/temp/node_modules/.pnpm/registry.npmjs.org/moment/2.25.3/node_modules/moment/ts3.1-typings/moment.d.ts": {
         "version": "1544ab3b5a57eed886c3bac6e18a65327b1b1caa633941d721530f6493a068d9",
@@ -41,7 +43,7 @@
         "version": "a951cabad67d20788e098b9d8b7d5d1fa49c2e80d4e08255cbcf90ea71243ee3",
         "signature": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439"
       },
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupsemantic.d.ts": {
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupSemantic.d.ts": {
         "version": "e222104af6cb9415238ad358488b74d76eceeff238c1268ec6e85655b05341da",
         "signature": "e222104af6cb9415238ad358488b74d76eceeff238c1268ec6e85655b05341da"
       },
@@ -49,11 +51,11 @@
         "version": "69da61a7b5093dac77fa3bec8be95dcf9a74c95a0e9161edb98bb24e30e439d2",
         "signature": "69da61a7b5093dac77fa3bec8be95dcf9a74c95a0e9161edb98bb24e30e439d2"
       },
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/difflines.d.ts": {
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/diffLines.d.ts": {
         "version": "eba230221317c985ab1953ccc3edc517f248b37db4fef7875cb2c8d08aff7be7",
         "signature": "eba230221317c985ab1953ccc3edc517f248b37db4fef7875cb2c8d08aff7be7"
       },
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printdiffs.d.ts": {
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printDiffs.d.ts": {
         "version": "b83e796810e475da3564c6515bc0ae9577070596a33d89299b7d99f94ecfd921",
         "signature": "b83e796810e475da3564c6515bc0ae9577070596a33d89299b7d99f94ecfd921"
       },
@@ -89,25 +91,26 @@
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
-      "../core/dist/index.d.ts": [
-        "../core/dist/map/directory/file.d.ts"
+      "../core/src/index.ts": [
+        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/chalk/4.0.0/node_modules/chalk/index.d.ts",
+        "../core/src/map/directory/file.ts"
       ],
       "./src/index.ts": [
-        "../core/dist/index.d.ts",
+        "../core/src/index.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/moment/2.25.3/node_modules/moment/ts3.1-typings/moment.d.ts"
       ],
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/difflines.d.ts": [
-        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/diffLines.d.ts": [
+        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupSemantic.d.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/types.d.ts"
       ],
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printdiffs.d.ts": [
-        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printDiffs.d.ts": [
+        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupSemantic.d.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/types.d.ts"
       ],
       "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/index.d.ts": [
-        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupsemantic.d.ts",
-        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/difflines.d.ts",
-        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printdiffs.d.ts",
+        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/diffLines.d.ts",
+        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printDiffs.d.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/types.d.ts"
       ],
       "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/index.d.ts": [
@@ -119,50 +122,48 @@
       ]
     },
     "exportedModulesMap": {
-      "../core/dist/index.d.ts": [
-        "../core/dist/map/directory/file.d.ts"
-      ],
       "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/index.d.ts": [
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupsemantic.d.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/difflines.d.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printdiffs.d.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/types.d.ts"
       ],
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/index.d.ts": [
+        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/types.d.ts"
+      ],
       "../../common/temp/node_modules/.pnpm/registry.npmjs.org/@types/jest/25.2.1/node_modules/@types/jest/index.d.ts": [
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/index.d.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/index.d.ts"
       ],
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printdiffs.d.ts": [
-        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printDiffs.d.ts": [
+        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupSemantic.d.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/types.d.ts"
       ],
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/difflines.d.ts": [
-        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/diffLines.d.ts": [
+        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupSemantic.d.ts",
         "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/types.d.ts"
-      ],
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/index.d.ts": [
-        "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/types.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
       "../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.8.3/node_modules/typescript/lib/lib.d.ts",
-      "./src/index.spec.ts",
-      "../core/dist/map/directory/file.d.ts",
-      "../core/dist/index.d.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/moment/2.25.3/node_modules/moment/ts3.1-typings/moment.d.ts",
-      "./src/index.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupsemantic.d.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/types.d.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/difflines.d.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printdiffs.d.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/index.d.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/types.d.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/index.d.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/@types/jest/25.2.1/node_modules/@types/jest/index.d.ts",
       "../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.8.3/node_modules/typescript/lib/lib.es5.d.ts",
       "../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.8.3/node_modules/typescript/lib/lib.dom.d.ts",
       "../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.8.3/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.8.3/node_modules/typescript/lib/lib.scripthost.d.ts"
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.8.3/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "./src/index.spec.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/moment/2.25.3/node_modules/moment/ts3.1-typings/moment.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/types.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/types.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/pretty-format/25.5.0/node_modules/pretty-format/build/index.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/chalk/4.0.0/node_modules/chalk/index.d.ts",
+      "../core/src/index.ts",
+      "./src/index.ts",
+      "../core/src/map/directory/file.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/cleanupSemantic.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/index.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/printDiffs.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/jest-diff/25.5.0/node_modules/jest-diff/build/diffLines.d.ts",
+      "../../common/temp/node_modules/.pnpm/registry.npmjs.org/@types/jest/25.2.1/node_modules/@types/jest/index.d.ts"
     ]
   },
   "version": "3.8.3"

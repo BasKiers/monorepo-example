@@ -1,8 +1,8 @@
 {
   "name": "@monorepo/core",
   "version": "1.0.0",
-  "main": "index.ts",
-  "typings": "index.ts",
+  "main": "src/index.ts",
+  "typings": "src/index.ts",
   "devDependencies": {
     "@types/chalk": "^2.2.0",
     "@types/jest": "^25.2.1",
