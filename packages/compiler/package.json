@@ -4,7 +4,6 @@
   "description": "Compiler options for this monorepo",
   "scripts": {
     "build": "",
-    "test": ""
   },
   "author": "",
   "license": "ISC",
