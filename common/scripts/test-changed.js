@@ -1,5 +1,5 @@
 const rushLib = require('../autoinstallers/rush-lib/node_modules/@microsoft/rush-lib');
-const { VersionControl } = require('../autoinstallers/rush-lib/node_modules/@microsoft/rush-lib/lib/utilities/VersionControl');
+const {VersionControl} = require('../autoinstallers/rush-lib/node_modules/@microsoft/rush-lib/lib/utilities/VersionControl');
 const path = require('path');
 const spawn = require('child_process').spawn;
 
@@ -64,14 +64,14 @@ async function run() {
         console.log(lines.join(""));
     });
 
-    await new Promise((resolve) => {
+    await new Promise((resolve, reject) => {
         buildProcess.on('close', function (code) {
             console.log('process exit code ' + code);
-            resolve();
+            code ? reject(code): resolve(code);
         });
     })
 
-    const testProcess = spawn('node', ['./common/scripts/install-run-rush.js', 'test', '--no-build', ...changedPackageNames.map(packageName => `--from=${packageName}`)]);
+    const testProcess = spawn('node', ['./common/scripts/install-run-rush.js', 'test', '--no-build', '--verbose', ...changedPackageNames.map(packageName => `--from=${packageName}`)]);
 
     testProcess.stdout.setEncoding('utf8');
     testProcess.stdout.on('data', function (data) {
@@ -80,12 +80,16 @@ async function run() {
         console.log(lines.join(""));
     });
 
-    await new Promise((resolve) => {
+    await new Promise((resolve, reject) => {
         testProcess.on('close', function (code) {
             console.log('process exit code ' + code);
-            resolve();
+            code ? reject(code): resolve(code);
         });
     })
 }
 
-run();
+run().then((code) => {
+    process.exit(code);
+}).catch((code) => {
+    process.exit(code)
+});

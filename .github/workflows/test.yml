@@ -1,0 +1,27 @@
+name: Run Tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - name: rush test
+        run: |
+          set -e
+          echo 'Installing...'
+          node common/scripts/install-run-rush.js install
+
+          echo 'Checking dependencies...'
+          node common/scripts/install-run-rush.js check
+
+          echo 'Testing...'
+          node common/scripts/install-run-rush.js test:changed
+        env:
+          CI: true

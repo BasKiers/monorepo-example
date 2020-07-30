@@ -36,7 +36,7 @@ async function run() {
         return;
     }
 
-    const testProcess = spawn('node', ['./common/scripts/install-run-rush.js', 'test', '--no-build', ...changedPackages.map(packageName => `--from=${packageName}`)]);
+    const testProcess = spawn('node', ['./common/scripts/install-run-rush.js', 'test', '--no-build', '--verbose', ...changedPackages.map(packageName => `--from=${packageName}`)]);
 
     testProcess.stdout.setEncoding('utf8');
     testProcess.stdout.on('data', function (data) {
