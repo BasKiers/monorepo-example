@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Compiler options for this monorepo",
   "scripts": {
-    "build": "",
+    "build": ""
   },
   "author": "",
   "license": "ISC",
