@@ -6,7 +6,7 @@ dependencies:
   '@nestjs/schematics': 7.0.1_typescript@3.9.7
   '@nestjs/testing': 7.4.0_67749f78640606e828f3a67cb5de1cc3
   '@rush-temp/api': 'file:projects/api.tgz_typescript@3.9.7'
-  '@rush-temp/compiler': 'file:projects/compiler.tgz_eslint@7.5.0'
+  '@rush-temp/compiler': 'file:projects/compiler.tgz'
   '@rush-temp/core': 'file:projects/core.tgz'
   '@rush-temp/processor': 'file:projects/processor.tgz_typescript@3.9.7'
   '@rushstack/heft': 0.3.0
@@ -14,6 +14,7 @@ dependencies:
   '@types/express': 4.17.7
   '@types/jest': 25.2.3
   '@types/moment': 2.13.0
+  '@types/node': 10.17.13
   '@types/supertest': 2.0.10
   '@typescript-eslint/eslint-plugin': 2.34.0_fb47f94cf895c61c0b37f95243fc0c6b
   '@typescript-eslint/parser': 2.34.0_eslint@7.5.0+typescript@3.9.7
@@ -29,6 +30,7 @@ dependencies:
   rxjs: 6.6.0
   supertest: 4.0.2
   ts-loader: 6.2.2_typescript@3.9.7
+  ts-node: 8.10.2_typescript@3.9.7
   ts-node-dev: 1.0.0-pre.56_typescript@3.9.7
   tsconfig-paths: 3.9.0
   typescript: 3.9.7
@@ -971,10 +973,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-pMCcqU2zT4TjqYFrWtYHKal7Sl30Ims6ulZ4UFXxI4xbtQqK/qqKwkDoBFCfooRqqmRu9vY3xaJRwxSh673aYg==
-  /@types/node/13.13.15:
-    dev: false
-    resolution:
-      integrity: sha512-kwbcs0jySLxzLsa2nWUAGOd/s21WU1jebrEdtzhsj1D4Yps1EOuyI1Qcu+FD56dL7NRNIJtDDjcqIG22NwkgLw==
   /@types/node/14.0.27:
     dev: false
     resolution:
@@ -1117,6 +1115,7 @@ packages:
       eslint: 7.5.0
       eslint-scope: 5.1.0
       eslint-utils: 2.1.0
+      typescript: 3.9.7
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -8787,8 +8786,10 @@ packages:
       '@rushstack/heft': 0.3.0
       '@types/express': 4.17.7
       '@types/jest': 25.2.3
-      '@types/node': 13.13.15
+      '@types/node': 10.17.13
       '@types/supertest': 2.0.10
+      '@typescript-eslint/eslint-plugin': 2.34.0_fb47f94cf895c61c0b37f95243fc0c6b
+      '@typescript-eslint/parser': 2.34.0_eslint@7.5.0+typescript@3.9.7
       eslint: 7.5.0
       eslint-config-prettier: 6.11.0_eslint@7.5.0
       eslint-plugin-import: 2.22.0_eslint@7.5.0
@@ -8806,23 +8807,18 @@ packages:
     peerDependencies:
       typescript: '*'
     resolution:
-      integrity: sha512-+B6o5P0mKaZfMEf/f6/62jS6kbcYsTSM5UrIkKIoEInfEon6EvCb6IJFXDddpu0uTJgnl6jTuABL38QjqPuHcA==
+      integrity: sha512-U9nI3hkCjf2Dxyvg9y0bRjP32F6SQpJVlI7zml/6zBPY/YI1w0kCH2AkFRXKl/Tohim1BhBjtfA5r55GLXvZKQ==
       tarball: 'file:projects/api.tgz'
     version: 0.0.0
-  'file:projects/compiler.tgz_eslint@7.5.0':
+  'file:projects/compiler.tgz':
     dependencies:
       '@types/node': 10.17.13
-      '@typescript-eslint/eslint-plugin': 2.34.0_fb47f94cf895c61c0b37f95243fc0c6b
-      '@typescript-eslint/parser': 2.34.0_eslint@7.5.0+typescript@3.9.7
       jest: 25.5.4
       typescript: 3.9.7
     dev: false
-    id: 'file:projects/compiler.tgz'
     name: '@rush-temp/compiler'
-    peerDependencies:
-      eslint: '*'
     resolution:
-      integrity: sha512-RKeAVyNaUWsJeA+JDgAS+9wnreNU+aHZFddXaAuPNp0nU5y+FGA8GtSNtgQx8ivV7b6IyLzAIko029Ut56iAAg==
+      integrity: sha512-9eaC+IxsW2koA1afaDjhmo9H0Lp30g2Gvvlp2G2IWRU3gm+mb5tOPCrUxpuFKpzqMcd127LMnX+/9+FY6DMa8Q==
       tarball: 'file:projects/compiler.tgz'
     version: 0.0.0
   'file:projects/core.tgz':
@@ -8871,7 +8867,8 @@ specifiers:
   '@types/express': ^4.17.3
   '@types/jest': ^25.2.1
   '@types/moment': ^2.13.0
-  '@types/supertest': ^2.0.8
+  '@types/node': 10.17.13
+  '@types/supertest': ^2.0.10
   '@typescript-eslint/eslint-plugin': ^2.23.0
   '@typescript-eslint/parser': ^2.23.0
   chalk: ^4.0.0
@@ -8886,6 +8883,7 @@ specifiers:
   rxjs: ^6.5.4
   supertest: ^4.0.2
   ts-loader: ^6.2.1
+  ts-node: ^8.10.1
   ts-node-dev: ^1.0.0-pre.44
   tsconfig-paths: ^3.9.0
   typescript: ~3.9.7
