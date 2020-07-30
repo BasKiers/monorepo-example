@@ -1,0 +1,8 @@
+{
+  "preset": "./node_modules/@rushstack/heft/includes/jest-shared.config.json",
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "testMatch": ["<rootDir>/src/**/*.test.ts?(x)", "<rootDir>/src/**/*.spec.ts?(x)"],
+  "moduleFileExtensions": [ "ts", "js" ]
+}

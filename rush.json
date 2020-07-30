@@ -411,6 +411,11 @@
       "packageName": "@monorepo/processor",
       "projectFolder": "packages/processor",
       "versionPolicyName": "Libraries"
+    },
+    {
+      "packageName": "@monorepo/compiler",
+      "projectFolder": "packages/compiler",
+      "versionPolicyName": "Libraries"
     }
     //
     // {

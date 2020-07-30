@@ -65,4 +65,9 @@ common/temp/
 # IDE files
 .idea
 
+# Heft cache
+.heft
+
+# compilation output folder
 dist
+lib

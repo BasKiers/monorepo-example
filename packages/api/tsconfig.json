@@ -1,15 +1,17 @@
 {
+  "extends": "./node_modules/@monorepo/compiler/includes/tsconfig.json",
   "compilerOptions": {
     "module": "commonjs",
+    "types": [
+      "node",
+      "jest"
+    ],
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es2017",
     "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
     "incremental": true
-  },
-  "exclude": ["node_modules", "dist"]
+  }
 }
