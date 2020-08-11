@@ -45,6 +45,6 @@
     "ts-loader": "^6.2.1",
     "ts-node": "^8.10.1",
     "tsconfig-paths": "^3.9.0",
-    "@rushstack/heft": "~0.3.0"
+    "@rushstack/heft": "~0.4.4"
   }
 }
