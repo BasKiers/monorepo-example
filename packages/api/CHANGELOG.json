@@ -1,0 +1,22 @@
+{
+  "name": "@monorepo/api",
+  "entries": [
+    {
+      "version": "0.0.2",
+      "tag": "@monorepo/api_v0.0.2",
+      "date": "Tue, 11 Aug 2020 12:05:42 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "bump heft version"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@monorepo/compiler\" from `~1.0.0` to `~1.0.1`"
+          }
+        ]
+      }
+    }
+  ]
+}

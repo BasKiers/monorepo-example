@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo/compiler",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "@monorepo/compiler_v1.0.1",
+      "date": "Tue, 11 Aug 2020 12:05:42 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "bump heft version"
+          }
+        ]
+      }
+    }
+  ]
+}

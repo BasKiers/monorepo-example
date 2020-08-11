@@ -1,6 +1,6 @@
 {
   "name": "@monorepo/compiler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compiler options for this monorepo",
   "scripts": {
     "build": ""
