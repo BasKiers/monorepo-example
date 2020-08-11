@@ -6,8 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "nest build",
+    "build": "heft build",
+    "clean": "heft clean",
     "format": "prettier --write \\\\\\\\\\\\\\\"src/**/*.ts\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"src/test/**/*.ts\\\\\\\\\\\\\\\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -45,6 +45,6 @@
     "ts-loader": "^6.2.1",
     "ts-node": "^8.10.1",
     "tsconfig-paths": "^3.9.0",
-    "@rushstack/heft": "~0.3.0"
+    "@rushstack/heft": "~0.4.4"
   }
 }

@@ -1,0 +1,61 @@
+name: Run Tests
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - name: rush install
+        run: |
+          set -e
+          echo 'Installing...'
+          node common/scripts/install-run-rush.js install
+
+          echo 'Checking dependencies...'
+          node common/scripts/install-run-rush.js check
+        env:
+          CI: true
+
+      - name: rush build
+        run: |
+          set -e
+          echo 'Building...'
+          node common/scripts/install-run-rush.js build --changed-projects-only
+        env:
+          CI: true
+
+      - name: rush test
+        run: |
+          set -e
+          echo 'Testing...'
+          node common/scripts/install-run-rush.js test:changed
+        env:
+          CI: true
+
+  changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - name: rush change --verify
+        run: |
+          set -e
+          echo 'Verify change file...'
+          node common/scripts/install-run-rush.js change --verify
+        env:
+          CI: true

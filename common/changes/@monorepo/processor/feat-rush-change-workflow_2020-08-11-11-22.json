@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "bump heft version",
+      "type": "patch",
+      "packageName": "@monorepo/processor"
+    }
+  ],
+  "packageName": "@monorepo/processor",
+  "email": "kiers.bas@gmail.com"
+}
