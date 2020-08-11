@@ -1,0 +1,15 @@
+{
+  "name": "@monorepo/compiler",
+  "version": "1.0.0",
+  "description": "Compiler options for this monorepo",
+  "scripts": {
+    "build": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "10.17.13",
+    "jest": "^25.5.3",
+    "typescript": "~3.9.7"
+  }
+}

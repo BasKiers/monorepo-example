@@ -1,0 +1,11 @@
+{
+  "preset": "./node_modules/@rushstack/heft/includes/jest-shared.config.json",
+  "testMatch": [
+    "<rootDir>/src/**/*.e2e-test.ts?(x)",
+    "<rootDir>/src/**/*.e2e-spec.ts?(x)",
+    "<rootDir>/src/**/*.test.ts?(x)",
+    "<rootDir>/src/**/*.spec.ts?(x)"
+  ],
+  "testEnvironment": "node",
+  "moduleFileExtensions": ["js", "json", "ts"]
+}

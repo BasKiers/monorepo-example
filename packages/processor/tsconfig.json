@@ -1,13 +1,11 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "./node_modules/@monorepo/compiler/includes/tsconfig.json",
   "compilerOptions": {
     /* Basic Options */
+    "types": ["jest"],
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "composite": true,
-    "outDir": "dist",
-    "rootDir": "src"
-  },
-  "include": ["src"]
+    "composite": true
+  }
 }

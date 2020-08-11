@@ -5,20 +5,19 @@
   "typings": "src/index.ts",
   "dependencies": {
     "@monorepo/core": "1.0.0",
-    "moment": "^2.25.3"
+    "moment": "^2.25.3",
+    "@monorepo/compiler": "~1.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.1",
     "@types/moment": "^2.13.0",
-    "jest": "^25.5.3",
-    "ts-jest": "^25.4.0",
+    "@types/jest": "^25.2.1",
     "ts-node": "^8.10.1",
     "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.8.3"
+    "@rushstack/heft": "~0.3.0"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "jest",
+    "build": "heft build",
+    "test": "heft test",
     "start": "ts-node src/index.ts",
     "start:dev": "ts-node-dev src/index.ts",
     "start:prod": "node dist/index.js"
