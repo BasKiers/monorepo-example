@@ -1,0 +1,31 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - 'master'
+
+
+jobs:
+  publish_changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - name: rush publish
+        run: |
+          set -e
+
+          git config --global user.name "Github Actions"
+          git config --global user.email "baskiers@users.noreply.github.com"
+
+          echo 'Publish changes...'
+          node common/scripts/install-run-rush.js publish -a -b master
+        env:
+          CI: true
