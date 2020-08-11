@@ -93,17 +93,6 @@
        *
        * Note: The default value is false. In Rush 5.7.x and earlier, the default value was true.
        */
-      "allowWarningsInSuccessfulBuild": false
-    },
-    {
-      "commandKind": "bulk",
-      "name": "test:incremental",
-      "summary": "Runs test on every package",
-      "description": "This is an test command that runs separately for each project",
-      "safeForSimultaneousRushProcesses": false,
-      "enableParallelism": true,
-      "ignoreDependencyOrder": false,
-      "ignoreMissingScript": true,
       "allowWarningsInSuccessfulBuild": false,
       "incremental": true
     },

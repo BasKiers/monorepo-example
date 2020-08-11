@@ -9,6 +9,8 @@
    */
    "pathsToDelete": [
      "lib",
-     "*.tmp"
+     "*.tmp",
+     ".rush/temp/package-deps_*",
+     ".heft/build-cache"
    ]
 }
