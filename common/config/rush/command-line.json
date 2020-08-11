@@ -108,6 +108,17 @@
       "incremental": true
     },
     {
+      "commandKind": "bulk",
+      "name": "clean",
+      "summary": "Runs clean on every package",
+      "description": "This is an clean command that runs separately for each project",
+      "safeForSimultaneousRushProcesses": false,
+      "enableParallelism": true,
+      "ignoreDependencyOrder": true,
+      "ignoreMissingScript": true,
+      "allowWarningsInSuccessfulBuild": false
+    },
+    {
       "commandKind": "global",
       "name": "test:changed",
       "summary": "Runs test on every package that has changes and its downstream dependencies",

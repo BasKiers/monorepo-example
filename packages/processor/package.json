@@ -18,6 +18,7 @@
   "scripts": {
     "build": "heft build",
     "test": "heft test",
+    "clean": "heft clean",
     "start": "ts-node src/index.ts",
     "start:dev": "ts-node-dev src/index.ts",
     "start:prod": "node dist/index.js"

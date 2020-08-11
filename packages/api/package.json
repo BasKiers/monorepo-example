@@ -6,8 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "nest build",
+    "build": "heft build",
+    "clean": "heft clean",
     "format": "prettier --write \\\\\\\\\\\\\\\"src/**/*.ts\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"src/test/**/*.ts\\\\\\\\\\\\\\\"",
     "start": "nest start",
     "start:dev": "nest start --watch",

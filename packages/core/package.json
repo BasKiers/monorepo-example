@@ -9,8 +9,9 @@
     "@rushstack/heft": "~0.4.4"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "heft test"
+    "build": "heft build",
+    "test": "heft test",
+    "clean": "heft clean"
   },
   "dependencies": {
     "chalk": "^4.0.0",
