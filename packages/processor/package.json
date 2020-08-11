@@ -1,12 +1,12 @@
 {
   "name": "@monorepo/processor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.ts",
   "typings": "src/index.ts",
   "dependencies": {
-    "@monorepo/core": "1.0.1",
+    "@monorepo/core": "1.0.2",
     "moment": "^2.25.3",
-    "@monorepo/compiler": "~1.0.1"
+    "@monorepo/compiler": "~1.0.2"
   },
   "devDependencies": {
     "@types/moment": "^2.13.0",

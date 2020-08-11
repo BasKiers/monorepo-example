@@ -2,6 +2,26 @@
   "name": "@monorepo/processor",
   "entries": [
     {
+      "version": "1.0.2",
+      "tag": "@monorepo/processor_v1.0.2",
+      "date": "Tue, 11 Aug 2020 12:27:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "bump heft version"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@monorepo/core\" from `1.0.1` to `1.0.2`"
+          },
+          {
+            "comment": "Updating dependency \"@monorepo/compiler\" from `~1.0.1` to `~1.0.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.1",
       "tag": "@monorepo/processor_v1.0.1",
       "date": "Tue, 11 Aug 2020 12:05:42 GMT",
