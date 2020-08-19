@@ -11,6 +11,6 @@
     "@types/node": "10.17.13",
     "jest": "^25.5.3",
     "typescript": "~3.9.7",
-    "@rushstack/heft": "~0.4.4"
+    "@rushstack/heft": "~0.6.1"
   }
 }

@@ -9,7 +9,7 @@ dependencies:
   '@rush-temp/compiler': 'file:projects/compiler.tgz'
   '@rush-temp/core': 'file:projects/core.tgz'
   '@rush-temp/processor': 'file:projects/processor.tgz_typescript@3.9.7'
-  '@rushstack/heft': 0.4.4
+  '@rushstack/heft': 0.6.1
   '@types/chalk': 2.2.0
   '@types/express': 4.17.7
   '@types/jest': 25.2.3
@@ -612,6 +612,29 @@ packages:
       node: '>= 8.3'
     resolution:
       integrity: sha512-pTJGEkSeg1EkCO2YWq6hbFvKNXk8ejqlxiOg1jBNLnWrgXOkdY6UmqZpwGFXNnRt9B8nO1uWMzLLZ4eCmhkPNA==
+  /@jest/transform/25.4.0:
+    dependencies:
+      '@babel/core': 7.10.5
+      '@jest/types': 25.5.0
+      babel-plugin-istanbul: 6.0.0
+      chalk: 3.0.0
+      convert-source-map: 1.7.0
+      fast-json-stable-stringify: 2.1.0
+      graceful-fs: 4.2.4
+      jest-haste-map: 25.5.1
+      jest-regex-util: 25.2.6
+      jest-util: 25.5.0
+      micromatch: 4.0.2
+      pirates: 4.0.1
+      realpath-native: 2.0.0
+      slash: 3.0.0
+      source-map: 0.6.1
+      write-file-atomic: 3.0.3
+    dev: false
+    engines:
+      node: '>= 8.3'
+    resolution:
+      integrity: sha512-t1w2S6V1sk++1HHsxboWxPEuSpN8pxEvNrZN+Ud/knkROWtf8LeUmz73A4ezE8476a5AM00IZr9a8FO9x1+j3g==
   /@jest/transform/25.5.1:
     dependencies:
       '@babel/core': 7.10.5
@@ -762,12 +785,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-69gFVDs7mJfNjv9Zs5DFVD+pvBW+k1TaHSOqUWqAyTTfLcKI/EMYQgvEvziRd+zAFtUOoye6MfWh0qvinGISPw==
-  /@rushstack/heft/0.4.4:
+  /@rushstack/heft/0.6.1:
     dependencies:
       '@jest/core': 25.4.0
       '@jest/reporters': 25.4.0
-      '@rushstack/node-core-library': 3.26.1
-      '@rushstack/ts-command-line': 4.4.6
+      '@jest/transform': 25.4.0
+      '@rushstack/node-core-library': 3.28.0
+      '@rushstack/ts-command-line': 4.5.0
       '@types/tapable': 1.0.5
       '@types/webpack': 4.39.8
       chokidar: 3.4.1
@@ -785,27 +809,29 @@ packages:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-1rzOpv/28Sh1h2CUoDyBcCqj9mIflsEWDScp8okiEWpswe99EsxegjJQoTHXEcYhrkMbVL8Otr5nYXQDA6U2nA==
-  /@rushstack/node-core-library/3.26.1:
+      integrity: sha512-/9FJmIFZQlCGCLVnozlc5ZHDiJmOKyrQZdAvsyo7qXlkm32ukoeR9p2Or029cSAPmUcIXgU40CpAqRzAvveaCg==
+  /@rushstack/node-core-library/3.28.0:
     dependencies:
       '@types/node': 10.17.13
       colors: 1.2.5
       fs-extra: 7.0.1
+      import-lazy: 4.0.0
       jju: 1.4.0
       semver: 7.3.2
       timsort: 0.3.0
       z-schema: 3.18.4
     dev: false
     resolution:
-      integrity: sha512-N2wewcrJS2Jut73qxi711D1OXVKd9+8YmCllcjxEN++88qqqxCQVnn6Iu9ydu79Frm5rV8p/zvHOLCeUm/mLOQ==
-  /@rushstack/ts-command-line/4.4.6:
+      integrity: sha512-9I9kSbZCwjx6y5F6HejTE529xDYIlGM8mu691XtyLl4OzX+1EZ4xxOXkWVVxirolk6SilDu5UqSeFuVgmb5dwA==
+  /@rushstack/ts-command-line/4.5.0:
     dependencies:
       '@types/argparse': 1.0.38
       argparse: 1.0.10
       colors: 1.2.5
+      string-argv: 0.3.1
     dev: false
     resolution:
-      integrity: sha512-ue3p2m773Yea/s4Ef2Q3gEyLd9T0NDjXCl+PlodGTrJHgxoiRwbROSWHAdYJL/LceGWa6Biqizu9qxUDEWFweQ==
+      integrity: sha512-6HCt30yOQix5jvEzjMSkyO/52TTvo2D9UYdWJ3fjEecQimIIQOrBvhjGjcnu2bvYmb89+RLMzw+ibRYBxkFFmg==
   /@schematics/schematics/0.901.9:
     dependencies:
       '@angular-devkit/core': 9.1.9
@@ -3960,6 +3986,7 @@ packages:
     dependencies:
       ajv: 6.12.3
       har-schema: 2.0.0
+    deprecated: this library is no longer supported
     dev: false
     engines:
       node: '>=6'
@@ -4194,6 +4221,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-6e1q1cnWP2RXD9/keSkxHScg508CdXqXWgWBaETNhyuBFz+kUZlKboh+ISK+bU++DmbHimVBrOz/zzPe0sZ3sQ==
+  /import-lazy/4.0.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-rKtvo6a868b5Hu3heneU+L4yEQ4jYKLtjpnPeUdK7h0yzXGmyBTypknlkCvHFBqfX9YlorEiMM6Dnq/5atfHkw==
   /import-local/2.0.0:
     dependencies:
       pkg-dir: 3.0.0
@@ -7524,6 +7557,12 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-gIudDlb8Jz2Am6VzOOkpkZoanxo=
+  /string-argv/0.3.1:
+    dev: false
+    engines:
+      node: '>=0.6.19'
+    resolution:
+      integrity: sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==
   /string-length/3.1.0:
     dependencies:
       astral-regex: 1.0.0
@@ -8783,7 +8822,7 @@ packages:
       '@nestjs/platform-express': 7.4.0_67749f78640606e828f3a67cb5de1cc3
       '@nestjs/schematics': 7.0.1_typescript@3.9.7
       '@nestjs/testing': 7.4.0_67749f78640606e828f3a67cb5de1cc3
-      '@rushstack/heft': 0.4.4
+      '@rushstack/heft': 0.6.1
       '@types/express': 4.17.7
       '@types/jest': 25.2.3
       '@types/node': 10.17.13
@@ -8807,36 +8846,36 @@ packages:
     peerDependencies:
       typescript: '*'
     resolution:
-      integrity: sha512-zi3gyysakMPSrA0Y0NKnDWqVy/yl1PZYs7rzKyOltPDbqzi9oGp0auYK9YrI4YU8MnQH1t5ADC6eeYM2EDLI6w==
+      integrity: sha512-xXD8+IGkpzP71+68XRIZyjrHfwx53r9W9bKx6Rsc1bpQtyGNfLOpVVTFVFgs2FKepH9iXSvglP+aFtmrw8a45Q==
       tarball: 'file:projects/api.tgz'
     version: 0.0.0
   'file:projects/compiler.tgz':
     dependencies:
-      '@rushstack/heft': 0.4.4
+      '@rushstack/heft': 0.6.1
       '@types/node': 10.17.13
       jest: 25.5.4
       typescript: 3.9.7
     dev: false
     name: '@rush-temp/compiler'
     resolution:
-      integrity: sha512-MP2+9e10oQAij2iIiZ7obSKnaCuXG0FFTaVzfVNWrYB8rcy29FnR5j6fr9jstmO3LLOy4h/PqTXrNDe5KfoLmg==
+      integrity: sha512-1X+b8WMWu0qgZ/KYbpGDy5xvkd4M3u4cwoLaMxSOtJaObhF4zq5OShxOJgYRRwTybmjg6F6w7pfcM1Le/oUKDw==
       tarball: 'file:projects/compiler.tgz'
     version: 0.0.0
   'file:projects/core.tgz':
     dependencies:
-      '@rushstack/heft': 0.4.4
+      '@rushstack/heft': 0.6.1
       '@types/chalk': 2.2.0
       '@types/jest': 25.2.3
       chalk: 4.1.0
     dev: false
     name: '@rush-temp/core'
     resolution:
-      integrity: sha512-ziKkQnuTSJayB4FJLO1odYBn4e9tscV+IPPN6wpsApjoAh5X8rHiIW9FrKd0zcNGRrYWrCJqviuyH/9Ac06/bg==
+      integrity: sha512-ry66VZE0NoEph+iFzxP5NdD5Pz9cL6+/SajGaeH72ERaZ/lfKzCB7Di90smuLUnPWLADCdvt6az766rOMw2uPw==
       tarball: 'file:projects/core.tgz'
     version: 0.0.0
   'file:projects/processor.tgz_typescript@3.9.7':
     dependencies:
-      '@rushstack/heft': 0.4.4
+      '@rushstack/heft': 0.6.1
       '@types/jest': 25.2.3
       '@types/moment': 2.13.0
       moment: 2.27.0
@@ -8848,7 +8887,7 @@ packages:
     peerDependencies:
       typescript: '*'
     resolution:
-      integrity: sha512-DuJchqgZzq9MMqu2Kj00Abty7a08qUDJLhWPdZlYuiVbABZOTnf+gl/RdSs0od9RKx8goSp+Za280I/4MBgtog==
+      integrity: sha512-h6XwmlRAnkf50pUfwOOGaJ98t9V4c5bBUjvJLYdTxIY5kgNaGW0DxQFPVTtXR+K0HrC7pHuL2S3ByhUzywvE0g==
       tarball: 'file:projects/processor.tgz'
     version: 0.0.0
 registry: ''
@@ -8863,7 +8902,7 @@ specifiers:
   '@rush-temp/compiler': 'file:./projects/compiler.tgz'
   '@rush-temp/core': 'file:./projects/core.tgz'
   '@rush-temp/processor': 'file:./projects/processor.tgz'
-  '@rushstack/heft': ~0.4.4
+  '@rushstack/heft': ~0.6.1
   '@types/chalk': ^2.2.0
   '@types/express': ^4.17.3
   '@types/jest': ^25.2.1
