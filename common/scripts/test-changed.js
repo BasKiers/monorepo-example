@@ -90,6 +90,7 @@ async function run() {
 
 run().then((code) => {
     process.exit(code);
-}).catch((code) => {
-    process.exit(code)
+}).catch((err) => {
+    console.error(err);
+    process.exit(1);
 });
