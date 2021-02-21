@@ -6,7 +6,7 @@ export interface Example {
 }
 
 export function sum(a: number, b: number) {
-  return a + b + 5;
+  return a + b + 6;
 }
 
 export function krijtje(s: string) {
